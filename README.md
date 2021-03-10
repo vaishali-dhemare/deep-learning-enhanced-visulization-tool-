@@ -12,7 +12,7 @@ The purpose of this project is to Design and Implement Deep Learning Enhanced vi
 * Predictive Modeling
 * Data Visualization
 * Microsoft Azure Cloud
-* GitHub
+* GitHub Actions
 
 ### Technologies
 * Python
