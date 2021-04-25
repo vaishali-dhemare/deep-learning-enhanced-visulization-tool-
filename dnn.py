@@ -17,18 +17,30 @@ def dnn():
     print(df)
     X = df.drop('Target', axis=1)  # axis=1 means column and axis 0 is row
     Y = df['Target']
-    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=0)
-    from sklearn.tree import DecisionTreeClassifier
-    tree_model = DecisionTreeClassifier()
-    tree_model = tree_model.fit(x_train, y_train)
-    y_predict = tree_model.predict(x_test)
-    print(y_predict)
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
+    len(x_train)
+    from keras.utils import np_utils
+    y_train = np_utils.to_categorical(y_train)
+    print(y_train)
+    # # Defining and designing neural network model
+    model = Sequential()
+    model.add(Dense(12, input_dim=12, activation='relu', kernel_initializer="uniform"))
+    model.add(Dense(8, activation='relu', kernel_initializer="uniform"))
+    model.add(Dense(8, activation='relu', kernel_initializer="uniform"))
+    model.add(Dense(2, activation='sigmoid', kernel_initializer="uniform"))
+    model.compile(loss='binary_crossentropy', optimizer="adam", metrics=['accuracy'])
+    model.fit(x_train, y_train, epochs=120, batch_size=10, verbose=2)
+    model.summary()
     from sklearn.metrics import accuracy_score
-    print(accuracy_score(y_test, y_predict))
+    y_pred = model.predict(x_test)
+    y_pred = np.argmax(y_pred, axis=1)
+    print(accuracy_score(y_test, y_pred))
     from sklearn.metrics import classification_report
-    print(classification_report(y_test, y_predict))
-    pd.DataFrame({'Actual': y_test, 'Predicted': y_predict})
-    Label = y_predict
+    print(classification_report(y_test, y_pred))
+    pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
+    from sklearn.metrics import confusion_matrix
+    print(confusion_matrix(y_test, y_pred))
+    Label = y_pred
     x_test["Source (one)"] = x_test["Source (one)"].astype(str)
     x_test["Source (one)"]
     x_test["Source (two)"] = x_test["Source (two)"].astype(str)
