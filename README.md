@@ -1,5 +1,5 @@
 # 
-# deep-learning-enhanced-visulization-tool-
+# deep-learning-enhanced-visulization-tool
 This project is a part of the thesis work of [Prairie View A & M University](https://www.pvamu.edu/) at [Electrical and Computer Engineering Department](https://www.pvamu.edu/engineering/research/). 
 #### -- Project Status: [Active]
 
