@@ -4,7 +4,7 @@ This project is a part of the thesis work of [Prairie View A & M University](htt
 #### -- Project Status: [Active]
 
 ## Project Intro/Objective
-The purpose of this project is to Design and Implement Deep Learning Enhanced visualization tool for network monitoring purpose, deploy project on Microsoft Azure cloud platform using GitHub actions CI/CD  pipe line.
+The purpose of this project is to Design and Implement Deep Learning Enhanced visualization tool for network monitoring , deploy project on Microsoft Azure cloud platform using Git actions CI/CD  pipe line.
 
 ### Methods Used
 * Deep Learning 
@@ -25,19 +25,19 @@ The purpose of this project is to Design and Implement Deep Learning Enhanced vi
 
 ## Project Description
 
-- Deep learning and Machine learning models have been trained, tested on Cyber space network dataset and integrated with visualization tool. Decision Tree, Support Vector Machine (SVM), Deep Neural Network (DNN) models are designed for classification in Python Programming language.
-- Visualization tool is developed by use of Cytoscape open source visualization tool libraries based on Java-script language (Cytoscape-Cola plug-in). Modified the code as per project requirement to show predicted nodes under attack using color coding, line color and thickness between interlinked node structure.  Website is hosted to represent the graphical interface of Visualization tool using HTML web page.  
-- Integrated DL models (Backend) and Visualization tool (Frontend) using Flask-API end points. 
-- Implement Deep Learning Enhanced visualization tool, deployed the project on Microsoft Azure cloud platform using GitHub actions CI/CD pipe line.
-- Major Challenge is scalability, network monitoring with large datasets with 10K, 1M records as frontend visualization tool performance is not up to the mark 
+- Deep learning and Machine learning models were trained and tested using the Cyber space network dataset, and these models were seamlessly integrated with a visualization tool. Specifically, classification models like Decision Tree, Support Vector Machine (SVM), and Deep Neural Network (DNN) were developed using Python.
+- The visualization tool was developed using the Cytoscape open-source visualization tool libraries, which are built on JavaScript (utilizing the Cytoscape-Cola plug-in). The code was customized to align with project requirements, enabling the display of predicted nodes under attack through color-coded indicators, distinct line colors, and variable thickness within the interconnected node structure. To provide a user-friendly interface, a website was established, featuring the graphical representation of the visualization tool using an HTML web page.
+- The integration of backend Deep Learning (DL) models with the frontend Visualization tool was achieved through Flask-API endpoints. Additionally, an advanced Deep Learning Enhanced visualization tool was implemented, and the entire project was deployed on the Microsoft Azure cloud platform using GitHub actions for Continuous Integration and Continuous Deployment (CI/CD) pipeline.
+- One of the primary challenges encountered during this process pertained to scalability, particularly concerning network monitoring with substantial datasets containing 10,000 to 1 million records. It was observed that the frontend visualization tool's performance did not meet desired standards when handling such extensive datasets with 1 M records.
 
 ## Needs of this project
 
-- frontend developers
+- Frontend Developement
 - Knowledge of HTML, Java-script 
 - data exploration
 - data processing/cleaning
-- statistical modeling
+- Feature Engineering
+- Knowledge of statistical and predictive ML and DL modeling
 - Python programming
 - End-point creation using FLask-API
 - Microsoft Azure Web application
